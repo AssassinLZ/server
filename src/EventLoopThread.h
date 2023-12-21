@@ -1,0 +1,8 @@
+//
+// Created by Assassin on 12/21/23.
+//
+
+#ifndef SERVER_EVENTLOOPTHREAD_HPP
+#define SERVER_EVENTLOOPTHREAD_HPP
+
+#endif //SERVER_EVENTLOOPTHREAD_HPP
