@@ -11,6 +11,27 @@
 #include <vector>
 
 class EventLoop{
+public:
+    typedef std::function<void()> Functors;
+    EventLoop();
+    ~EventLoop();
+
+    void loop();
+    void quit();
+    void runInLoop(Functors&& cb);
+    void queueInLoop(Functors&& cb);
+    bool isInLoopThread() const {
+        return threadId_ == CurrentThread::tid();
+    }
+    void assertInLoopThread(){
+        shutDownWR(channel -> getFd());
+    }
+    void removeFromPoller(shared_ptr<Channel> channel){
+        poller_ -> epoll_del(channel);
+    }
+    void updatePoller(shared_ptr<Channel> channel, int timeout = 0){
+        poller_ -> epoll_del(channel);
+    }
 private:
     bool looping_;
     shared_prt<Epoll> poller_;
