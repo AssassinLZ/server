@@ -1,1 +1,4 @@
 # server
+该项目是我学习Linux网络编程的服务器项目
+参考github上优秀的开源项目
+使用reactor，epoll，线程池等技术
