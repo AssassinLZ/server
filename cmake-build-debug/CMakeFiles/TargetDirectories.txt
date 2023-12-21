@@ -1,0 +1,3 @@
+/Users/assassin/work/clion/server/cmake-build-debug/CMakeFiles/server.dir
+/Users/assassin/work/clion/server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/assassin/work/clion/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir

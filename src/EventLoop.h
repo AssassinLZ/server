@@ -2,8 +2,8 @@
 // Created by Assassin on 12/21/23.
 //
 
-#ifndef SERVER_EVENTLOOP_HPP
-#define SERVER_EVENTLOOP_HPP
+#ifndef SERVER_EVENTLOOP_H
+#define SERVER_EVENTLOOP_H
 
 #include <iostream>
 #include <functional>
@@ -32,4 +32,4 @@ private:
 
 
 
-#endif //SERVER_EVENTLOOP_HPP
+#endif //SERVER_EVENTLOOP_H
