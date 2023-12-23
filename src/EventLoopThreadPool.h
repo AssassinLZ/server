@@ -12,13 +12,13 @@
 #include "base/Logging.h"
 #include "base/noncopyable.h"
 
-class EventLoopThreadPoll : noncopyable {
+class EventLoopThreadPool : noncopyable {
 public:
-    EventLoopThreadPoll(EventLoop* baseeLoop, int numThreads);
-    ~EventLoopThreadPoll(){
-        LOG << "~EventLoopThreadPoll()";
+    EventLoopThreadPool(EventLoop* baseeLoop, int numThreads);
+    ~EventLoopThreadPool(){
+        LOG << "~EventLoopThreadPool()";
     }
-    void start()
+    void start();
     EventLoop* getNextLoop();
     
 private:
